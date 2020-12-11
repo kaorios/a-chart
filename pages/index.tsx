@@ -186,7 +186,7 @@ export default function Home() {
             <tbody>
               {
                 data.map((d, i) => (
-                  <tr key={d.label}>
+                  <tr key={i}>
                     <td className="border-b py-4">
                       <input type="text" name="label" value={d.label || ''} onChange={handleChangeData(i)} />
                     </td>
