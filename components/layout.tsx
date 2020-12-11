@@ -16,7 +16,8 @@ export default function Layout({ children }) {
         <meta name="msapplication-TileColor" content="#00aba9" />
         <meta name="theme-color" content="#ffffff" />
         <meta name="description" content={description} />
-        <meta property="og:image" content="/ogp.png" />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content="https://a-chart.vercel.app/ogp.png" />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
