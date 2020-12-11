@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
-export const siteTitle = 'A chart'
-export const description = 'かんたんに円グラフを作るウェブサービス'
+export const siteTitle = 'A chart - Easily create a chart'
+export const description = 'かんたんに無料で円グラフを作成できるウェブサービス。グラフメーカー。項目と値を入力するだけで、自動で円グラフが作成されます。'
 
 export default function Layout({ children }) {
   return (
@@ -16,12 +16,7 @@ export default function Layout({ children }) {
         <meta name="msapplication-TileColor" content="#00aba9" />
         <meta name="theme-color" content="#ffffff" />
         <meta name="description" content={description} />
-        <meta
-          property="og:image"
-          content={`https://og-image.now.sh/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
+        <meta property="og:image" content="/ogp.png" />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
